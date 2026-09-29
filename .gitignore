@@ -1,0 +1,42 @@
+# [Gitignore](https://git-scm.com/docs/gitignore)
+
+# Dependencies
+node_modules/
+
+# Build / generate output
+dist/
+tmp/
+*.tgz
+
+# Environment variable
+.env
+*.local
+
+# Logs
+logs
+*.log*
+
+# Tests / e2e / reports
+tests/**/coverage/
+tests/**/reports
+
+# Documents
+docs/
+
+# IDEs and Editors
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Misc
+.git/
+.cache/
+.temp/
+yarn.lock
+package-lock.json
+
+# System Files
+.DS_Store
