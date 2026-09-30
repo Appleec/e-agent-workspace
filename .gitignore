@@ -1,16 +1,37 @@
 # [Gitignore](https://git-scm.com/docs/gitignore)
 
-# Dependencies
+# Personal configs (if any)
+backup/
+personal/
+private/
+
+# AI agent (claude code / Codex)
+.claude/settings.local.json
+.claude/worktrees/
+.claude/scheduled_tasks.lock
+
+# Documents
+docs/
+
+# Dependencies (eg. Node.js)
 node_modules/
+.yarn/
+.cache/
+yarn.lock
+package-lock.json
 
 # Build / generate output
 dist/
-tmp/
+build/
 *.tgz
 
 # Environment variable
 .env
-*.local
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
 
 # Logs
 logs
@@ -19,24 +40,42 @@ logs
 # Tests / e2e / reports
 tests/**/coverage/
 tests/**/reports
-
-# Documents
-docs/
+coverage/
+.nyc_output/
 
 # IDEs and Editors
-.idea
-.vscode
+.idea/
+.vscode/
 *.suo
+*.swp
+*.swo
 *.ntvs*
 *.njsproj
 *.sln
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+tmp/
+temp/
+.temp/
+*.tmp
+*.bak
+*.backup
 
 # Misc
 .git/
-.cache/
-.temp/
-yarn.lock
-package-lock.json
 
 # System Files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
